@@ -128,17 +128,17 @@ ENABLE_AUTO_REPLY = false
 
 [[d1_databases]]
 binding = "DB"
-database_name = "xxx"
-database_id = "xxx"
+database_name = "dev"
+database_id = "b41d8439-9c43-49be-b7bc-e60eed99081a"
 
 # Workers AI binding (required for AI email extraction)
 # [ai]
 # binding = "AI"
 
 # kv config for send email verification code
-# [[kv_namespaces]]
-# binding = "KV"
-# id = "xxxx"
+[[kv_namespaces]]
+binding = "KV"
+id = "d76a9ff070cb445ca7d3c62e2b39f88a"
 
 # ratelimit config for /api/new_address
 # [[unsafe.bindings]]
