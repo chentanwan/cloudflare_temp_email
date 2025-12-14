@@ -159,3 +159,5 @@ id = "d76a9ff070cb445ca7d3c62e2b39f88a"
 # [[services]]
 # binding = "AUTH_INBOX"
 # service = "auth-inbox"
+
+DEBUG_MODE = true
