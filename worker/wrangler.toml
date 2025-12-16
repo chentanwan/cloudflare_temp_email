@@ -34,11 +34,11 @@ PREFIX = "tmp"
 # ADDRESS_REGEX = "[^a-z0-9]"
 # (min, max) length of the adderss, if not set, the default is (1, 30)
 MIN_ADDRESS_LEN = 1
-MAX_ADDRESS_LEN = 10
+MAX_ADDRESS_LEN = 15
 # Disable custom email address name, if set true, users cannot input custom email name, will auto generate
 # DISABLE_CUSTOM_ADDRESS_NAME = true
 # IF YOU WANT TO MAKE YOUR SITE PRIVATE, UNCOMMENT THE FOLLOWING LINES
-# PASSWORDS = ["123", "456"]
+PASSWORDS = ["chentanwan"]
 # For admin panel
 ADMIN_PASSWORDS = ["Ctw1234.,"]
 # warning: no password or user check for admin portal
@@ -47,8 +47,8 @@ ADMIN_PASSWORDS = ["Ctw1234.,"]
 # ADMIN_CONTACT = "xx@xx.xxx"
 # Create new address with default domain first, if set true, will use first domain from DEFAULT_DOMAINS when no domain specified
 # CREATE_ADDRESS_DEFAULT_DOMAIN_FIRST = false
-DEFAULT_DOMAINS = ["xxx.xxx1" , "xxx.xxx2"] # domain name for no role users
-DOMAINS = DOMAINS = ["211024.xyz"] # all domain names
+#DEFAULT_DOMAINS = ["xxx.xxx1" , "xxx.xxx2"] # domain name for no role users
+DOMAINS = ["211024.xyz"] # all domain names
 # For chinese domain name, you can use DOMAIN_LABELS to show chinese domain name
 # DOMAIN_LABELS = ["中文.xxx", "xxx.xxx2"]
 # USER_DEFAULT_ROLE = "vip" # default role for new users(only when enable mail verification)
@@ -69,12 +69,12 @@ ENABLE_USER_DELETE_EMAIL = true
 # Allow automatic replies to emails
 ENABLE_AUTO_REPLY = false
 # Allow webhook
-# ENABLE_WEBHOOK = true
+ENABLE_WEBHOOK = true
 # Enable address password feature, if set true, will generate password for new address and support password login and change
-# ENABLE_ADDRESS_PASSWORD = false
+ENABLE_ADDRESS_PASSWORD = false
 # Footer text
 # COPYRIGHT = "Dream Hunter"
-# DISABLE_SHOW_GITHUB = true
+DISABLE_SHOW_GITHUB = true
 # default send balance, if not set, it will be 0
 # DEFAULT_SEND_BALANCE = 1
 # the role which can send emails without limit, multiple roles can be separated by ,
@@ -128,8 +128,8 @@ TG_MAX_ADDRESS = 100
 
 [[d1_databases]]
 binding = "DB"
-database_name = "dev"
-database_id = "b41d8439-9c43-49be-b7bc-e60eed99081a"
+database_name = "cloudflare-temp-email-d1"
+database_id = "23c3b8c2-098e-4902-a6f9-070441236ab0"
 
 # Workers AI binding (required for AI email extraction)
 # [ai]
@@ -138,7 +138,7 @@ database_id = "b41d8439-9c43-49be-b7bc-e60eed99081a"
 # kv config for send email verification code
 [[kv_namespaces]]
 binding = "KV"
-id = "d76a9ff070cb445ca7d3c62e2b39f88a"
+id = "99e9d6c69dca49ccb7d729faf93f75fd"
 
 # ratelimit config for /api/new_address
 # [[unsafe.bindings]]
