@@ -13,6 +13,6 @@ jobs:
 
     steps:
       - name: Sync upstream changes
-        run: gh repo sync ${{ github.repository }} --source dreamhunter2333/cloudflare_temp_email --branch main
+        run: gh repo sync ${{ github.repository }} --source dreamhunter2333/cloudflare_temp_email --branch main --force
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
